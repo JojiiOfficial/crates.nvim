@@ -396,6 +396,8 @@ require('crates').open_repository()
 require('crates').open_documentation()
 -- Open the `crates.io` page of the crate on the current line.
 require('crates').open_crates_io()
+-- Open the `lib.rs` page of the crate on the current line.
+require('crates').open_lib_rs()
 
 -- Returns whether there is information to show in a popup.
 require('crates').popup_available(): boolean

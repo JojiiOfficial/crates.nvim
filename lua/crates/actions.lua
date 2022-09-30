@@ -112,6 +112,16 @@ function M.open_documentation()
    end
 end
 
+function M.open_lib_rs()
+   local buf = util.current_buf()
+   local line = util.cursor_pos()
+   local crates = util.get_line_crates(buf, Range.pos(line))
+   local _, crate = next(crates)
+   if crate then
+      util.open_url(util.lib_rs_url(crate.name))
+   end
+end
+
 function M.open_crates_io()
    local buf = util.current_buf()
    local line = util.cursor_pos()
@@ -191,6 +201,7 @@ function M.get_actions()
    if crate then
       actions["open_documentation"] = M.open_documentation
       actions["open_crates.io"] = M.open_crates_io
+      actions["open_lib.rs"] = M.open_lib_rs
    end
 
    actions["update_all_crates"] = M.update_all_crates

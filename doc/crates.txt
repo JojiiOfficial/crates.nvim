@@ -265,6 +265,7 @@ You can use |vim.keymap.set()| to map lua function to keys directly.
     vim.keymap.set('n', '<leader>cR', crates.open_repository, opts)
     vim.keymap.set('n', '<leader>cD', crates.open_documentation, opts)
     vim.keymap.set('n', '<leader>cC', crates.open_crates_io, opts)
+    vim.keymap.set('n', '<leader>cL', crates.open_lib_rs, opts)
 <
 
 To integrate the crates popup in an idiomatic way into your configuration, you
@@ -382,6 +383,9 @@ open_documentation()                             *crates.open_documentation()*
 
 open_crates_io()                                     *crates.open_crates_io()*
     Open the `crates.io` page of the crate on the current line.
+
+open_lib_rs()                                     *crates.open_lib_rs()*
+    Open the `lib.rs` page of the crate on the current line.
 
 
 popup_available(): `boolean`                        *crates.popup_available()*

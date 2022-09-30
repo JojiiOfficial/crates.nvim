@@ -590,6 +590,10 @@ function M.docs_rs_url(name)
    return "https://docs.rs/" .. name
 end
 
+function M.lib_rs_url(name)
+   return "https://lib.rs/crates/" .. name
+end
+
 function M.crates_io_url(name)
    return "https://crates.io/crates/" .. name
 end
