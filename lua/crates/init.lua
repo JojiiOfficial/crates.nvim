@@ -158,6 +158,7 @@ M.open_homepage = actions.open_homepage
 M.open_repository = actions.open_repository
 M.open_documentation = actions.open_documentation
 M.open_crates_io = actions.open_crates_io
+M.open_lib_rs = actions.open_lib_rs
 
 M.popup_available = popup.available
 M.show_popup = popup.show
